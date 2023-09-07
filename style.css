@@ -1,0 +1,45 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  width: max-content;
+  padding: 40px;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+.counter__value {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.counter__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.counter__button button:disabled {
+  background-color: #ccc;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.counter__button button:focus {
+  outline: none;
+}

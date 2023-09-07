@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .counter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      width: max-content;
+      padding: 40px;
+      border-radius: 40px;
+      margin: 0 auto;
+    }
+
+    .counter__value {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+
+    .counter__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .counter__button button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .counter__button button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="counter">
+    <h1>Counter</h1>
+    <div class="counter__value">0</div>
+    <div class="counter__button">
+      <button class="counter__button--decrease">-</button>
+      <button class="counter__button--increase">+</button>
+    </div>
+  </div>
+</body>
+
+</html>
